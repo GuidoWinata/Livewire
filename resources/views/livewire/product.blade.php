@@ -31,7 +31,7 @@
             <tbody>
             @foreach ($data as $item)
             <tr wire:key="{{ $item->id }}">
-                <th>{{ $item->id }}</th>
+                <th>{{ $loop->iteration }}</th>
                     <td>{{ $item->nama }}</td>
                     <td>{{ $item->nomor }}</td>
                     <td>{{ $item->jenis }}</td>
